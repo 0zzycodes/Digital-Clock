@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #9966ff;
+  padding: 2em;
+}
+h1,
+span {
+  display: block;
+  font-size: 2em;
+  color: #110033;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  width: 2.5em;
+  height: 2.5em;
+  color: #110033;
+  background-color: #9966ff;
+  font-size: 1.4rem;
+
+  border: 0px;
+  outline: none;
+  font-weight: bold;
+  border-radius: 10px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:last-child {
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
